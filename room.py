@@ -3,7 +3,7 @@ from datetime import timedelta
 import math
 from drink import Drink
 class Room:
-    def __init__(self,id=None,guest=None,drink=[[Drink(0,"none",0),0]],status="AVAILABLE",timein=None,timeout=None,kind=None ):
+    def __init__(self,id=None,guest=None,drink=[[Drink(0,"none",0),0]],status="AVAILABLE",timein=0,timeout=0,kind=None ):
         self.id=id
         self.guest=guest
         self.status=status
@@ -39,7 +39,7 @@ class Room:
         self.status="Available"
         self.timein=None
         self.timeout=None
-        self.drink=None
+        self.drink=[[Drink(0,"none",0),0]]
         self.kind=None
         self.fan=False
     def payment(self):
