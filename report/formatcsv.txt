@@ -1,0 +1,1 @@
+ STT,Phòng,Ngày,Giờ Vô, Giờ ra,Loại Phòng ,tiền nước, tiền phòng, tổng tiền
